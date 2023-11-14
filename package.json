@@ -1,0 +1,17 @@
+{
+  "name": "js-css-migration",
+  "version": "1.0.0",
+  "description": "styled components to css modules migration helper for next.js / react projects",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "node migrationLogic.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Demet Caliskan",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "glob": "^7.1.7",
+    "yargs": "^17.1.1"
+  }
+}
