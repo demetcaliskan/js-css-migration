@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "styled components to css modules migration helper for next.js / react projects",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demetcaliskan/js-css-migration"
+  },
   "scripts": {
     "migrate": "node migrationLogic.js",
     "test": "echo \"Error: no test specified\" && exit 1"
