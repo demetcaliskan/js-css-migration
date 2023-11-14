@@ -17,6 +17,7 @@ yargs
     (argv) => {
       const folder = argv.folder || '/src/components/*' // Default folder path if not provided
       const errors = migrateComponentFiles(folder)
+
       if (errors.length > 0) {
         console.log('Components with errors after migration:')
         console.log(errors.join(', '))
