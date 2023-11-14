@@ -22,7 +22,10 @@ jobs:
       - name: Install dependencies with Yarn
         run: yarn install
 
+      - name: Increment Patch Version
+        run: yarn version --patch --new-version $(yarn info your-package-name version).1 --no-git-tag-version
+
       - name: Publish to Yarn
-        run: yarn publish --access public # Adjust options as needed
+        run: yarn publish --access public --new-version $(yarn info your-package-name version)
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
