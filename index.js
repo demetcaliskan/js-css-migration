@@ -2,6 +2,8 @@
 
 const { migrateComponentFiles } = require('./lib/migrationLogic')
 const yargs = require('yargs')
+const errors = migrateComponentFiles('src/components/*')
+console.log('error', errors)
 
 yargs
   .command(
@@ -10,12 +12,12 @@ yargs
     (yargs) => {
       yargs.positional('folder', {
         describe:
-          'Specific folder path (e.g., /src/components/ArticleCardComponents)',
+          'Specific folder path (e.g., src/components/ArticleCardComponents)',
         type: 'string',
       })
     },
     (argv) => {
-      const folder = argv.folder || '/src/components/*' // Default folder path if not provided
+      const folder = argv.folder || 'src/components/*' // Default folder path if not provided
       const errors = migrateComponentFiles(folder)
 
       if (errors.length > 0) {
@@ -33,7 +35,7 @@ yargs
     'Migrate all components',
     () => {},
     () => {
-      const errors = migrateComponentFiles('/src/components/*')
+      const errors = migrateComponentFiles('src/components/*')
       if (errors.length > 0) {
         console.log('Components with errors after migration:')
         console.log(errors.join(', '))
