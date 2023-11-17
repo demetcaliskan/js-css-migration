@@ -13,9 +13,9 @@
 
 ## Before You Install
 
-# To be able to use command line,
+To be able to use command line,
 
-# you can either download the package globally or you can add the following command to your package.json file:
+you can either download the package globally or you can add the following command to your package.json file:
 
 ```
   "scripts": {
@@ -26,25 +26,21 @@
 
 ## Installation
 
-# Global Installation
+### Global Installation
 
 ```sh
 $ npm i js-css-migration -g
 ```
 
-or
-
 ```sh
 $ yarn global add js-css-migration
 ```
 
-# Normal Installation
+### Normal Installation
 
 ```sh
 $ npm i js-css-migration
 ```
-
-or
 
 ```sh
 $ yarn install js-css-migration
@@ -58,8 +54,6 @@ To migrate a specific folder path such as: /src/components/common
 $ js-css-migration migrate <folder_path>
 ```
 
-or
-
 To migrate all components under the directory: /src/components/
 
 ```sh
@@ -71,8 +65,6 @@ If you added a script instead of downloading globally, you can use it like this:
 ```sh
 $ npm migrate
 ```
-
-or
 
 ```sh
 $ yarn migrate <folder_path>
