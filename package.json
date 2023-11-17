@@ -17,8 +17,6 @@
   "author": "Demet Caliskan",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.23.3",
-    "@babel/preset-react": "^7.23.3",
     "fs-extra": "^10.0.0",
     "glob": "^7.1.7",
     "yargs": "^17.1.1"
