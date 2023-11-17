@@ -1,6 +1,6 @@
 {
   "name": "js-css-migration",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "styled components to css modules migration helper for next.js / react projects",
   "main": "index.js",
   "repository": {
