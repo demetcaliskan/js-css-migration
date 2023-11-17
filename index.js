@@ -28,18 +28,4 @@ yargs
       }
     }
   )
-  .command(
-    'migrate-all',
-    'Migrate all components',
-    () => {},
-    () => {
-      const errors = migrateComponentFiles('src/components/*')
-      if (errors.length > 0) {
-        console.log('Components with errors after migration:')
-        console.log(errors.join(', '))
-      } else {
-        console.log('All components migrated successfully.')
-      }
-    }
-  )
   .help().argv
