@@ -2,8 +2,6 @@
 
 const { migrateComponentFiles } = require('./lib/migrationLogic')
 const yargs = require('yargs')
-const errors = migrateComponentFiles('src/components/*')
-console.log('error', errors)
 
 yargs
   .command(
